@@ -30,6 +30,7 @@
 		1EEDCFA4171FCAF500E7F0B1 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEDCFA3171FCAF500E7F0B1 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1EEDCFA6171FCCED00E7F0B1 /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EEDCFA5171FCCED00E7F0B1 /* box.png */; };
 		1EEDCFB0171FCF2600E7F0B1 /* refresh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1EEDCFAF171FCF2600E7F0B1 /* refresh.jpg */; };
+		1EEDCFB7171FD7C300E7F0B1 /* Coffecup.png in Resources */ = {isa = PBXBuildFile; fileRef = 1EEDCFB6171FD7C300E7F0B1 /* Coffecup.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		1EEDCFA3171FCAF500E7F0B1 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		1EEDCFA5171FCCED00E7F0B1 /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
 		1EEDCFAF171FCF2600E7F0B1 /* refresh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = refresh.jpg; sourceTree = "<group>"; };
+		1EEDCFB6171FD7C300E7F0B1 /* Coffecup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Coffecup.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		1EEDCF5F171FB58200E7F0B1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1EEDCFB6171FD7C300E7F0B1 /* Coffecup.png */,
 				1EEDCFAF171FCF2600E7F0B1 /* refresh.jpg */,
 				1EEDCFA5171FCCED00E7F0B1 /* box.png */,
 				1EEDCF9C171FC8DF00E7F0B1 /* icon.png */,
@@ -215,6 +218,7 @@
 				1EEDCFA1171FC8DF00E7F0B1 /* pin.png in Resources */,
 				1EEDCFA6171FCCED00E7F0B1 /* box.png in Resources */,
 				1EEDCFB0171FCF2600E7F0B1 /* refresh.jpg in Resources */,
+				1EEDCFB7171FD7C300E7F0B1 /* Coffecup.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

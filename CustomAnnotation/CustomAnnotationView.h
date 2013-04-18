@@ -12,6 +12,7 @@
 @interface CustomAnnotationView : MKAnnotationView
 
 @property (strong, nonatomic) UIImageView *calloutView;
+@property (strong, nonatomic) UIImageView *img;
 @property (strong, nonatomic) UILabel *flightLbl;
 @property (strong, nonatomic) UILabel *regLbl;
 @property (strong, nonatomic) UILabel *routeLbl;

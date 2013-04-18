@@ -11,7 +11,7 @@
 
 @implementation CustomAnnotationView
 
-@synthesize calloutView, flightLbl, regLbl, routeLbl, dtLbl;
+@synthesize calloutView, flightLbl, regLbl, routeLbl, dtLbl , img;
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated{
     [super setSelected:selected animated:animated];
@@ -20,7 +20,7 @@
     if(selected)
     {
         //Add your custom view to self...
-        flightLbl = [[UILabel alloc] initWithFrame:CGRectMake(-70, 70, 120, 20)];
+        flightLbl = [[UILabel alloc] initWithFrame:CGRectMake(-61, 70, 120, 20)];
         flightLbl.backgroundColor = [UIColor clearColor];
         flightLbl.text = ann.title;
         flightLbl.font=[UIFont boldSystemFontOfSize:12];
@@ -28,7 +28,7 @@
         flightLbl.adjustsFontSizeToFitWidth = YES;
 
 
-        regLbl = [[UILabel alloc] initWithFrame:CGRectMake(-70, 90, 120, 20)];
+        regLbl = [[UILabel alloc] initWithFrame:CGRectMake(-61, 90, 120, 20)];
         regLbl.backgroundColor = [UIColor clearColor];
         regLbl.text = ann.subtitle;
         regLbl.font=[UIFont boldSystemFontOfSize:12];
@@ -36,7 +36,7 @@
         regLbl.adjustsFontSizeToFitWidth = YES;
 
 
-        routeLbl = [[UILabel alloc] initWithFrame:CGRectMake(-70, 110, 120, 20)];
+        routeLbl = [[UILabel alloc] initWithFrame:CGRectMake(-61, 110, 120, 20)];
         routeLbl.backgroundColor = [UIColor clearColor];
         routeLbl.text = ann.thirdtitle;
         routeLbl.font=[UIFont boldSystemFontOfSize:12];
@@ -44,7 +44,7 @@
         routeLbl.adjustsFontSizeToFitWidth = YES;
 
 
-        dtLbl = [[UILabel alloc] initWithFrame:CGRectMake(-70, 130, 120, 20)];
+        dtLbl = [[UILabel alloc] initWithFrame:CGRectMake(-61, 130, 120, 20)];
         dtLbl.backgroundColor = [UIColor clearColor];
         dtLbl.text = ann.fourthtitle;
         dtLbl.font=[UIFont boldSystemFontOfSize:12];
@@ -53,6 +53,9 @@
         
         calloutView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"box.png"]];
 
+        img = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Coffecup.png"]];
+        img.frame = CGRectMake(39, 100, 64, 64);
+        
 /*        if ([ann.locationType isEqualToString:@"airport"]) {
             calloutView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"box.png"]];
         }
@@ -78,6 +81,7 @@
         [self addSubview:regLbl];
         [self addSubview:routeLbl];
         [self addSubview:dtLbl];
+        [self addSubview:img];
     }
     else
     {
@@ -87,6 +91,7 @@
         [regLbl removeFromSuperview];
         [routeLbl removeFromSuperview];
         [dtLbl removeFromSuperview];
+        [img removeFromSuperview];
     }
 }
 
